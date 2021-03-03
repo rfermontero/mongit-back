@@ -6,4 +6,4 @@ sudo apt-get install git-lfs
 git lfs install
 
 #Update crontab daily at 00:00
-(crontab -l ; echo "$(echo '0 0 * * *'" cd $(pwd) && "'./backup.sh >> '"$(pwd)"'/backup.log 2>&1' ; crontab -l)") 2>&1 | sed "s/no crontab for $(whoami)//" | sort | uniq | crontab -
+(crontab -l ; echo "$(echo '* * * * *'" cd $(pwd) && "'./backup.sh > '"$(pwd)"'/backup.gz 2>&1' ; crontab -l)") 2>&1 | sed "s/no crontab for $(whoami)//" | sort | uniq | crontab -
