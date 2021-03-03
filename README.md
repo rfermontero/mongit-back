@@ -8,7 +8,7 @@ Container should be called mongo, otherwise change the backup.sh file to set it 
 
 It's only needed to execute `./install.sh`
 
-There are a few environment variables mandatories to have the backend running.
+There are a few environment variables mandatories to have the backup service running.
 
 - **MONGO_INITDB_ROOT_USERNAME** MongoDB username with mongodump permissions
 - **MONGO_INITDB_ROOT_PASSWORD** MongoDB password with mongodump permissions
